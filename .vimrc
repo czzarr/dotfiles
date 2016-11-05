@@ -190,6 +190,5 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'justinmk/vim-dirvish'
 Plug 'pangloss/vim-javascript'
-Plug 'vim-syntastic/syntastic'
 Plug 'elzr/vim-json'
 call plug#end()
