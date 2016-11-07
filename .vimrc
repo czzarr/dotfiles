@@ -73,6 +73,7 @@ set cursorline
 set smarttab
 set tabstop=2
 set shiftwidth=2
+" Convert tabs to spaces
 set expandtab
 " Show “invisible” characters
 "set lcs=tab:▸\ ,trail:·,eol:¬,nbsp:_
@@ -155,7 +156,7 @@ set shortmess=atI
 " Reselect lines were juste pasted
 nnoremap <leader>v V`]
 " Save on lost focus
-au BufLeave,FocusLost * :wa
+autocmd BufLeave,FocusLost * silent! :wa
 " Open splits right and below"
 set splitbelow
 set splitright
@@ -176,6 +177,12 @@ if !exists('g:loaded_matchit')
 endif
 " Parse *.md files as Markdown
 autocmd BufNewFile,BufReadPost *.md set filetype=markdown
+" Indent Python files:
+autocmd BufNewFile,BufRead *.py
+    \ set tabstop=4 |
+    \ set softtabstop=4 |
+    \ set shiftwidth=4 |
+    \ set textwidth=79
 
 " Plugins with vim-plug
 call plug#begin('~/.vim/plugged')
@@ -196,4 +203,10 @@ Plug 'junegunn/fzf.vim'
 Plug 'justinmk/vim-dirvish'
 Plug 'pangloss/vim-javascript'
 Plug 'elzr/vim-json'
+Plug 'vim-scripts/indentpython.vim'
+Plug 'nvie/vim-flake8'
+Plug 'vim-syntastic/syntastic'
 call plug#end()
+
+" enable all Python syntax highlighting features
+let python_highlight_all = 1
