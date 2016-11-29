@@ -44,5 +44,9 @@ complete -W "NSGlobalDomain" defaults;
 # z db
 . /usr/local/bin/z.sh
 
+ # This loads nvm
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+
 # added by Anaconda3 4.2.0 installer
 #export PATH="/Users/stan/anaconda/bin:$PATH"
