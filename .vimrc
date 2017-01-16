@@ -206,6 +206,7 @@ Plug 'elzr/vim-json'
 Plug 'vim-scripts/indentpython.vim'
 Plug 'nvie/vim-flake8'
 Plug 'vim-syntastic/syntastic'
+Plug 'digitaltoad/vim-pug'
 call plug#end()
 
 " enable all Python syntax highlighting features
