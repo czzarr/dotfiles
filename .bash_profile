@@ -54,3 +54,6 @@ export NVM_DIR="$HOME/.nvm"
 
 # added by Anaconda3 4.2.0 installer
 #export PATH="/Users/stan/anaconda/bin:$PATH"
+
+# fzf
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
