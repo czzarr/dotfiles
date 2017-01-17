@@ -186,6 +186,7 @@ autocmd BufNewFile,BufRead *.py
 
 " Plugins with vim-plug
 call plug#begin('~/.vim/plugged')
+Plug 'ctrlpvim/ctrlp.vim'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-eunuch'
 Plug 'tpope/vim-fugitive'
@@ -222,4 +223,10 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 " enable standard for syntastic
 let g:syntastic_javascript_checkers = ['standard']
-autocmd bufwritepost *.js silent !standard --fix %
+autocmd BufLeave,FocusLost *.js silent !standard --fix %
+
+" ctrlp
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\v[\/](node_modules|dist)|(\.(git|hg|svn))$',
+  \ 'file': '\v\.(swp|so|zip)$',
+  \ }
