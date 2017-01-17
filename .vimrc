@@ -229,6 +229,7 @@ let g:ctrlp_custom_ignore = {
   \ 'dir':  '\v[\/](node_modules|dist)|(\.(git|hg|svn))$',
   \ 'file': '\v\.(swp|so|zip)$',
   \ }
+let g:ctrlp_show_hidden = 1
 
 "fzf
 " Mapping selecting mappings
