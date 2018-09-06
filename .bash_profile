@@ -1,3 +1,6 @@
+# Add `~/bin` to the `$PATH`
+export PATH="$HOME/bin:$PATH";
+
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
 # * ~/.extra can be used for other settings you don’t want to commit.
@@ -14,7 +17,6 @@ shopt -s nocaseglob;
 
 # Append to the Bash history file, rather than overwriting it
 shopt -s histappend;
-export PROMPT_COMMAND='history -a;history -c;history -r'
 
 # Autocorrect typos in path names when using `cd`
 shopt -s cdspell;
@@ -42,19 +44,9 @@ fi;
 # You could just use `-g` instead, but I like being explicit
 complete -W "NSGlobalDomain" defaults;
 
-# Add completion for google cloud sdk
-source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.bash.inc'
-source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.bash.inc'
-
 # z db
 . /usr/local/bin/z.sh
 
  # This loads nvm
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
-
-# added by Anaconda3 4.2.0 installer
-#export PATH="/Users/stan/anaconda/bin:$PATH"
-
-# fzf
-[ -f ~/.fzf.bash ] && source ~/.fzf.bash
