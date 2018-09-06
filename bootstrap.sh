@@ -7,7 +7,7 @@ git pull origin master;
 function doIt() {
 	    rsync --exclude ".git/" \
 		        --exclude ".DS_Store" \
-  		        --exclude ".init/" \
+  		        --exclude ".bootstrap.sh" \
 		        --exclude ".macos" \
 		        --exclude ".vim/" \
 	            -avh --no-perms . ~;
