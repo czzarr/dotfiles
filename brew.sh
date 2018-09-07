@@ -39,6 +39,7 @@ brew install gnupg
 # Install more recent versions of some macOS tools.
 brew install vim --with-override-system-vi
 brew install grep
+brew install ncdu
 brew install openssh
 brew install screen
 brew install tmux
@@ -84,6 +85,7 @@ brew install fzf
 brew install git
 brew install git-lfs
 brew install imagemagick --with-webp
+brew install lnav
 brew install p7zip
 brew install pigz
 brew install pv
