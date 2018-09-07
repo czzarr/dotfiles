@@ -198,6 +198,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'itchyny/lightline.vim'
 Plug 'nathanaelkane/vim-indent-guides'
 Plug '/usr/local/opt/fzf'
+Plug 'junegunn/fzf.vim'
 Plug 'justinmk/vim-dirvish'
 Plug 'pangloss/vim-javascript'
 Plug 'terryma/vim-multiple-cursors'
@@ -232,8 +233,9 @@ let g:ctrlp_custom_ignore = {
 let g:ctrlp_show_hidden = 1
 
 "fzf
-nnoremap <silent> <leader><space> :Files<CR>
-nnoremap <silent> <leader>a :Buffers<CR>
+nmap ; :Buffers<CR>
+nmap <leader>t :Files<CR>
+nmap <leader>r :Tags<CR>
 " Mapping selecting mappings
 nmap <leader><tab> <plug>(fzf-maps-n)
 xmap <leader><tab> <plug>(fzf-maps-x)
