@@ -9,6 +9,7 @@ function doIt() {
 		        --exclude ".DS_Store" \
   		        --exclude ".bootstrap.sh" \
 		        --exclude ".macos" \
+			--exclude ".vim/swaps/" \
 	            -avh --no-perms . ~;
         source ~/.bash_profile;
 }
