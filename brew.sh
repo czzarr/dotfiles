@@ -93,6 +93,7 @@ brew install rename
 brew install ripgrep
 brew install rlwrap
 brew install ssh-copy-id
+brew install the_silver_searcher
 brew install tree
 brew install vbindiff
 brew install z
