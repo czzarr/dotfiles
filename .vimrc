@@ -205,32 +205,13 @@ Plug 'terryma/vim-multiple-cursors'
 Plug 'mxw/vim-jsx'
 Plug 'elzr/vim-json'
 Plug 'vim-scripts/indentpython.vim'
-Plug 'nvie/vim-flake8'
-Plug 'vim-syntastic/syntastic'
 Plug 'digitaltoad/vim-pug'
+Plug 'mbbill/undotree'
+Plug 'w0rp/ale'
 call plug#end()
 
 " enable all Python syntax highlighting features
 let python_highlight_all = 1
-
-" syntastic settings
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-
-let g:syntastic_always_populate_loc_list = 0
-let g:syntastic_auto_loc_list = 0
-let g:syntastic_check_on_open = 0
-let g:syntastic_check_on_wq = 0
-let g:syntastic_javascript_checkers = ['standard']
-autocmd bufwritepost *.js silent !standard --fix %
-
-" ctrlp
-let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\v[\/](node_modules|dist)|(\.(git|hg|svn))$',
-  \ 'file': '\v\.(swp|so|zip)$',
-  \ }
-let g:ctrlp_show_hidden = 1
 
 "fzf
 nmap ; :Buffers<CR>
