@@ -236,6 +236,7 @@ let g:ctrlp_show_hidden = 1
 nmap ; :Buffers<CR>
 nmap <leader>t :Files<CR>
 nmap <leader>r :Tags<CR>
+let $FZF_DEFAULT_COMMAND = 'rg --files --hidden --follow -g "!{.git,node_modules}/*" 2>/dev/null'
 " Mapping selecting mappings
 nmap <leader><tab> <plug>(fzf-maps-n)
 xmap <leader><tab> <plug>(fzf-maps-x)
