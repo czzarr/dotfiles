@@ -80,6 +80,7 @@ brew install ack
 brew install autojump
 #brew install exiv2
 brew install fd
+brew install fzf
 brew install git
 brew install git-lfs
 brew install imagemagick --with-webp
