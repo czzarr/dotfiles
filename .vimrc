@@ -185,7 +185,6 @@ autocmd BufNewFile,BufRead *.py
 
 " Plugins with vim-plug
 call plug#begin('~/.vim/plugged')
-Plug 'ctrlpvim/ctrlp.vim'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-eunuch'
 Plug 'tpope/vim-fugitive'
@@ -198,9 +197,10 @@ Plug 'terryma/vim-expand-region'
 Plug 'airblade/vim-gitgutter'
 Plug 'itchyny/lightline.vim'
 Plug 'nathanaelkane/vim-indent-guides'
-Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'
+Plug '/usr/local/opt/fzf'
 Plug 'justinmk/vim-dirvish'
 Plug 'pangloss/vim-javascript'
+Plug 'terryma/vim-multiple-cursors'
 Plug 'mxw/vim-jsx'
 Plug 'elzr/vim-json'
 Plug 'vim-scripts/indentpython.vim'
@@ -232,6 +232,8 @@ let g:ctrlp_custom_ignore = {
 let g:ctrlp_show_hidden = 1
 
 "fzf
+nnoremap <silent> <leader><space> :Files<CR>
+nnoremap <silent> <leader>a :Buffers<CR>
 " Mapping selecting mappings
 nmap <leader><tab> <plug>(fzf-maps-n)
 xmap <leader><tab> <plug>(fzf-maps-x)
