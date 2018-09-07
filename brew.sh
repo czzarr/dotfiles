@@ -77,7 +77,9 @@ brew install woff2
 
 # Install other useful binaries.
 brew install ack
+brew install autojump
 #brew install exiv2
+brew install fd
 brew install git
 brew install git-lfs
 brew install imagemagick --with-webp
@@ -85,6 +87,7 @@ brew install p7zip
 brew install pigz
 brew install pv
 brew install rename
+brew install rg
 brew install rlwrap
 brew install ssh-copy-id
 brew install tree
