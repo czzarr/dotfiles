@@ -210,9 +210,6 @@ Plug 'mbbill/undotree'
 Plug 'w0rp/ale'
 call plug#end()
 
-" enable all Python syntax highlighting features
-let python_highlight_all = 1
-
 "fzf
 nmap ; :Buffers<CR>
 nmap <leader>t :Files<CR>
@@ -227,5 +224,10 @@ imap <c-x><c-k> <plug>(fzf-complete-word)
 imap <c-x><c-f> <plug>(fzf-complete-path)
 imap <c-x><c-j> <plug>(fzf-complete-file-ag)
 imap <c-x><c-l> <plug>(fzf-complete-line)
+
+" ALE
+let g:ale_sign_warning = '▲'
+let g:ale_sign_error = '✗'
+
 "JSX
 let g:jsx_ext_required = 0
