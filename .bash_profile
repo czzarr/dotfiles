@@ -1,7 +1,7 @@
 # Add `~/bin` to the `$PATH`
 export PATH="$HOME/bin:/usr/local/sbin:$PATH";
 export PATH="/usr/local/opt/python/libexec/bin:$PATH";
-export PATH="usr/local/miniconda3/bin:$PATH";
+export PATH="/usr/local/miniconda3/bin:$PATH";
 
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
