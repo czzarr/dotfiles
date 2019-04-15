@@ -208,6 +208,7 @@ Plug 'vim-scripts/indentpython.vim'
 Plug 'digitaltoad/vim-pug'
 Plug 'mbbill/undotree'
 Plug 'w0rp/ale'
+Plug 'vito-c/jq.vim'
 call plug#end()
 
 "fzf
