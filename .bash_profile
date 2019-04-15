@@ -54,5 +54,3 @@ fi
 # You could just use `-g` instead, but I like being explicit
 complete -W "NSGlobalDomain" defaults;
 
- # This loads nvm
-. "/usr/local/opt/nvm/nvm.sh"
